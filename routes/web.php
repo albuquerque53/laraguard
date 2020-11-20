@@ -3,7 +3,7 @@
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'auth.login')->name('login.form');
+Route::view('/', 'auth.login')->name('login.form')->middleware('guest');
 Route::post('/', [
     LoginController::class, 'doLogin'
     ])->name('login');
