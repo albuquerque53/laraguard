@@ -12,11 +12,18 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return view('dashboard.dash');
+            return redirect('/dashboard');
         } else {
             $errorMessage = 'Invalid credentials, please try again.';
             return back()
                 ->with('errors', $errorMessage);
         }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        
+        return redirect('/');
     }
 }
