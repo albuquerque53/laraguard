@@ -16,5 +16,6 @@
 </head>
 <body>
     <h1>Dashboard</h1>
+    <a href="{{ route('logout') }}">Log Out</a>
 </body>
 </html>
