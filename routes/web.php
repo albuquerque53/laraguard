@@ -11,3 +11,7 @@ Route::post('/', [
 Route::get('/dashboard', function() {
     return view('dashboard.dash');
 })->middleware('auth:web');
+
+Route::get('/logout', [
+    LoginController::class, 'logout'
+    ])->name('logout');
