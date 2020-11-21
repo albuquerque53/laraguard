@@ -6,6 +6,7 @@
     <title>@yield('title') - Laraguards</title>
 
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 </head>
 <body>
     
