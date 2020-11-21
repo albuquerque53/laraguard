@@ -9,5 +9,5 @@
 * [X] Create new Guard in Laravel
 * [X] Use Socialite
 * [X] Do login with Google
-* [ ] Do login with Github
+* [X] Do login with Github
 * [ ] Reset password option
