@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProviderController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -10,7 +11,12 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::view('/dashboard', 'dashboard.dash')->middleware('auth:web');
 
-Route::get('/redirect', [LoginController::class, 'redirectToProvider'])
-    ->name('redirect');
-Route::get('/callback', [LoginController::class, 'handleProviderCallback'])
-    ->name('provider.callback');
+Route::prefix('google')->group(function() {
+    Route::get('redirect', [
+        ProviderController::class, 'redirectToProvider'
+    ])->name('google.redirect');
+    
+    Route::get('callback', [
+        ProviderController::class, 'handleProviderCallback'
+    ])->name('google.callback');
+});
