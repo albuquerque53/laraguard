@@ -12,7 +12,7 @@
         <input class="un " name="email" type="email" align="center" placeholder="E-mail">
         <input class="pass" name="password" type="password" align="center" placeholder="Password">
         <button class="submit" align="center">Sign in</button>
-        <a class="google-button" href="{{ route('redirect') }}">
+        <a class="google-button" href="{{ route('google.redirect') }}">
             <i class="fab fa-google"></i>
             Login with Google
         </a>
