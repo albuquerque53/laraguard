@@ -16,6 +16,10 @@
             <i class="fab fa-google"></i>
             Login with Google
         </a>
+        <a class="github-button" href="{{ route('github.redirect') }}">
+            <i class="fab fa-github"></i>
+            Login with Github
+        </a>
     </form>
 
 </div>
