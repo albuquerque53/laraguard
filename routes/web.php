@@ -20,3 +20,13 @@ Route::prefix('google')->group(function() {
         ProviderController::class, 'handleProviderCallback'
     ])->name('google.callback');
 });
+
+Route::prefix('github')->group(function() {
+    Route::get('redirect', [
+        ProviderController::class, 'redirectToProvider'
+    ])->name('github.redirect');
+
+    Route::get('callback', [
+        ProviderController::class, 'handleProviderCallback'
+    ])->name('github.callback');
+});
