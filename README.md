@@ -10,4 +10,4 @@
 * [X] Use Socialite
 * [X] Do login with Google
 * [X] Do login with Github
-* [ ] Reset password option
+* [X] Reset password option
