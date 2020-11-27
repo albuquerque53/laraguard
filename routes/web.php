@@ -35,7 +35,7 @@ Route::prefix('github')->group(function() {
 });
 
 Route::view('/forgot-password', 'auth.forgot-password')
-    ->middleware('guest')->name('password.reset');
+    ->middleware('guest')->name('forgot.password');
 Route::post('/forgot-password', [
     ForgotPasswordController::class, 'sendEmailLink'
 ])->middleware('guest')->name('reset.send');
