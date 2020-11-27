@@ -136,10 +136,23 @@ font-family: 'Ubuntu', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.forgot {
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
-    padding-top: 15px;
+.forgot-password {
+    width: 70%;
+    background-color: #000;
+    cursor: pointer;
+    color: #494949;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a {

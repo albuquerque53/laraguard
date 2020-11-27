@@ -23,6 +23,9 @@
             <i class="fab fa-github"></i>
             Login with Github
         </a>
+        <a href="{{ route('forgot.password') }}" class="forgo-password">
+            Forgot your password?
+        </a>
     </form>
 
 </div>
